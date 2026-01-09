@@ -11,24 +11,30 @@ export default function About() {
       </Link>
 
       <div className="space-y-16 sm:space-y-20">
-        <div className="space-y-8">
-          <p className="leading-relaxed text-secondary">
-            I'm driven by curiosity and a love for creating thoughtful, useful
-            things. I'm just as interested in why things work as how they do.
-            I've pursued that across internships, academia, hackathons, and
-            personal projects.
+        <div className="space-y-8 leading-relaxed text-secondary">
+          <p>
+            <span className="text-foreground">Hi, I&apos;m Felipe 👋 </span>{" "}
+            I&apos;m drawn to internal tools, workflows, and smart automation.
+            The kind of stuff that quietly powers real work behind the scenes.
+            Currently, I'm a Computer Science student at the
+            <span className="text-foreground">
+              <Image
+                src="/logos/ucf.jpeg"
+                alt="UCF"
+                width={20}
+                height={20}
+                className="inline rounded-sm h-5 w-5 align-middle mx-2"
+              />
+              University of Central Florida
+            </span>
+            .
           </p>
-          <Link href={"/about"} className="flex flex-row items-start gap-1">
-            <Image
-              src="/icons/yellow-folder.png"
-              alt="about"
-              width={24}
-              height={24}
-              className="rounded-sm h-6 w-6"
-            />
-            <span className="mt-1 text-sm">More about me</span>
-            <span className="mt-0.5">→</span>
-          </Link>
+
+          <p>
+            Outside of tech, I’m into traveling, trying new food spots, rock
+            climbing, and poker. Whether I’m coding or not, I’m always
+            exploring, experimenting, and trying to make things a little better.
+          </p>
         </div>
       </div>
     </StaggeredContainer>
