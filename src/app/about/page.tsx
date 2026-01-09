@@ -1,16 +1,15 @@
 import React from "react";
-import Image from "next/image";
-import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
-import Link from "next/link";
 import { StaggeredContainer } from "@/components/ui/StaggeredContainer";
+import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+export default function About() {
   return (
     <StaggeredContainer className="space-y-8">
-      <h1 className="text-xl font-semibold tracking-wide">
-        Felipe Min <span className="text-muted text-sm ml-1">민영기</span>
-      </h1>
+      <Link href="/" className="text-sm">
+        <span className="mr-1">←</span>Back
+      </Link>
+
       <div className="space-y-16 sm:space-y-20">
         <div className="space-y-8">
           <p className="leading-relaxed text-secondary">
@@ -31,10 +30,6 @@ export default function Home() {
             <span className="mt-0.5">→</span>
           </Link>
         </div>
-
-        <Experience />
-
-        <Projects />
       </div>
     </StaggeredContainer>
   );
