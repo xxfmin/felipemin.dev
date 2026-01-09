@@ -12,7 +12,7 @@ export default function Home() {
         Felipe Min <span className="text-muted text-sm ml-1">민영기</span>
       </h1>
       <div className="space-y-16 sm:space-y-20">
-        <div className="space-y-8">
+        <div className="space-y-6">
           <p className="leading-relaxed text-secondary">
             I'm driven by curiosity and a love for creating thoughtful, useful
             things. I'm just as interested in why things work as how they do.

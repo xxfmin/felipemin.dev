@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import { SmoothScroll } from "@/components/ui/SmoothScroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,10 +32,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${geistMono.variable} antialiased`}>
-        <div className="container-width py-14 space-y-20">
-          {children}
-          <Footer />
-        </div>
+        <SmoothScroll>
+          <div className="container-width py-14 space-y-20">
+            {children}
+            <Footer />
+          </div>
+        </SmoothScroll>
       </body>
     </html>
   );
