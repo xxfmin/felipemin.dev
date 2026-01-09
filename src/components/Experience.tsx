@@ -18,16 +18,21 @@ export default function Experience() {
             </div>
             <div className="flex items-center gap-2 flex-1">
               <span className="text-secondary">{experience.title} at </span>
-              <Image
-                src={experience.logo}
-                alt={`${experience.company} logo`}
-                width={20}
-                height={20}
-                className="rounded-sm h-5 w-5"
-              />
-              <Link href={experience.companyUrl} className="">
-                {experience.company}
-              </Link>
+              <div className="group flex items-center gap-2">
+                <Image
+                  src={experience.logo}
+                  alt={`${experience.company} logo`}
+                  width={20}
+                  height={20}
+                  className="rounded-sm h-5 w-5 cursor-pointer"
+                />
+                <Link
+                  href={experience.companyUrl}
+                  className="group-hover:underline transition-all"
+                >
+                  {experience.company}
+                </Link>
+              </div>
             </div>
           </div>
         ))}

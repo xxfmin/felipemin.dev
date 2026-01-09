@@ -8,13 +8,13 @@ export default function Projects() {
 
       <div className="flex flex-col space-y-4">
         {projects.map((project) => (
-          <div key={project.slug} className="flex flex-row">
-            <div className="text-muted mr-1">↳</div>
+          <div key={project.slug} className="flex flex-row group">
+            <div className="text-muted mr-1 cursor-pointer">↳</div>
 
             <span className="text-secondary leading-relaxed">
               <Link
                 href={`/projects/${project.slug}`}
-                className="text-foreground"
+                className="text-foreground group-hover:underline transition-all"
               >
                 {project.title}
               </Link>

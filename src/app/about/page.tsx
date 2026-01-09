@@ -9,7 +9,10 @@ import { Music } from "@/components/Music";
 export default function About() {
   return (
     <StaggeredContainer className="space-y-8">
-      <Link href="/" className="text-sm text-secondary">
+      <Link
+        href="/"
+        className="text-sm text-secondary hover:text-foreground transition-colors duration-150"
+      >
         <span className="mr-1">←</span>Back
       </Link>
 
@@ -20,20 +23,28 @@ export default function About() {
               Hi, I&apos;m Felipe 👋{" "}
             </span>
             I got into this path by tinkering with things like installing
-            Minecraft mods and jailbreaking my phone. I loved pushing past
-            defaults and exploring what could be improved.
+            Minecraft mods and jailbreaking my phone during my childhood. I
+            loved pushing past defaults and exploring what could be improved.
           </p>
           <p>
-            Currently, I&apos;m a Computer Science student at the
-            <span className="text-foreground">
+            Currently, I&apos;m a Computer Science student at the{" "}
+            <span className="text-foreground group inline">
               <Image
                 src="/logos/ucf.jpeg"
                 alt="UCF"
                 width={20}
                 height={20}
-                className="inline rounded-sm h-5 w-5 align-middle mx-2"
+                className="inline rounded-sm h-5 w-5 mx-2 cursor-pointer"
+                style={{ verticalAlign: "middle" }}
               />
-              University of Central Florida
+              <Link
+                href="https://www.cecs.ucf.edu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group-hover:underline transition-all"
+              >
+                University of Central Florida
+              </Link>
             </span>
             . I&apos;m drawn to internal tools, workflows, and smart automation.
             The kind of stuff that quietly powers real work behind the scenes.
