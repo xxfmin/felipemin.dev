@@ -5,9 +5,7 @@ import Link from "next/link";
 export default function Experience() {
   return (
     <div className="space-y-6">
-      <h2 className="text-xs font-mono tracking-wider text-muted font-medium uppercase">
-        Experience
-      </h2>
+      <h2 className="section-title">Experience</h2>
 
       <div className="space-y-4">
         {experiences.map((experience, index) => (

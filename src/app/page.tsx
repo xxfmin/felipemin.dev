@@ -14,9 +14,9 @@ export default function Home() {
       <div className="space-y-16 sm:space-y-20">
         <div className="space-y-6">
           <p className="leading-relaxed text-secondary">
-            I'm driven by curiosity and a love for creating thoughtful, useful
-            things. I'm just as interested in why things work as how they do.
-            I've pursued that across internships, academia, hackathons, and
+            I&apos;m driven by curiosity and a love for creating thoughtful, useful
+            things. I&apos;m just as interested in why things work as how they do.
+            I&apos;ve pursued that across internships, academia, hackathons, and
             personal projects.
           </p>
           <Link href={"/about"} className="flex flex-row items-start gap-1">

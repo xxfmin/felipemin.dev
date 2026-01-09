@@ -4,9 +4,7 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <div className="space-y-6">
-      <h2 className="text-xs font-mono tracking-wider text-muted font-medium uppercase">
-        Projects
-      </h2>
+      <h2 className="section-title">Projects</h2>
 
       <div className="flex flex-col space-y-4">
         {projects.map((project) => (
