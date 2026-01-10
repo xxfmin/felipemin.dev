@@ -60,7 +60,7 @@ export function MusicCard({ song }: MusicCardProps) {
           height={60}
           className="rounded-lg"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-15 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-25 transition-opacity duration-300" />
       </Link>
       <div className="flex flex-col ml-3 space-y-0.5 text-white">
         <p className="font-[550] text-sm">{song.title}</p>

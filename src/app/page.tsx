@@ -13,10 +13,33 @@ export default function Home() {
       </h1>
       <div className="space-y-16 sm:space-y-20">
         <div className="space-y-4">
-          <p className="leading-relaxed text-secondary">
+          {/* <p className="leading-relaxed text-secondary">
             I&apos;m driven by curiosity and a love for creating thoughtful,
             useful things. I&apos;m just as interested in why things work as how
             they do. I&apos;ve pursued that across internships, academia,
+            hackathons, and personal projects.
+          </p> */}
+          <p className="leading-relaxed text-secondary">
+            I am a Computer Science student at the{" "}
+            <span className="text-foreground group inline">
+              <Image
+                src="/logos/ucf.jpeg"
+                alt="UCF"
+                width={200}
+                height={200}
+                className="inline rounded-sm h-4.5 w-4.5 mx-2 cursor-pointer align-baseline"
+              />
+              <Link
+                href="https://www.cecs.ucf.edu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group-hover:underline transition-all"
+              >
+                University of Central Florida
+              </Link>
+            </span>
+            . I&apos;m driven by curiosity and a love for creating thoughtful,
+            useful things. I&apos;ve pursued that across internships, academia,
             hackathons, and personal projects.
           </p>
           <Link
@@ -30,10 +53,10 @@ export default function Home() {
               height={24}
               className="rounded-sm h-4.5 w-4.5"
             />
-            <span className="text-sm underline mt-0.5 underline-offset-2 decoration-[0.5px] decoration-secondary group-hover:opacity-90 group-hover:decoration-secondary/90 transition-all duration-150">
+            <span className="text-sm underline mt-0.5 underline-offset-2 decoration-[0.5px] decoration-muted group-hover:opacity-85 group-hover:decoration-muted/85 transition-all duration-150">
               More about me
             </span>
-            <span className="">→</span>
+            {/* <span className="">→</span> */}
           </Link>
         </div>
 

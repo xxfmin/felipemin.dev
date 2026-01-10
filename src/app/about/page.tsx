@@ -27,26 +27,9 @@ export default function About() {
             loved pushing past defaults and exploring what could be improved.
           </p>
           <p>
-            Currently, I&apos;m a Computer Science student at the{" "}
-            <span className="text-foreground group inline">
-              <Image
-                src="/logos/ucf.jpeg"
-                alt="UCF"
-                width={200}
-                height={200}
-                className="inline rounded-sm h-4.5 w-4.5 mx-2 cursor-pointer align-baseline"
-              />
-              <Link
-                href="https://www.cecs.ucf.edu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group-hover:underline transition-all"
-              >
-                University of Central Florida
-              </Link>
-            </span>
-            . I&apos;m drawn to internal tools, workflows, and smart automation.
-            The kind of stuff that quietly powers real work behind the scenes.
+            Currently, I&apos;m drawn to internal tools, workflows, and smart
+            automation. The kind of stuff that quietly powers real work behind
+            the scenes.
           </p>
         </div>
 
