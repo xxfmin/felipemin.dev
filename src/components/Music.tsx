@@ -63,7 +63,7 @@ export function MusicCard({ song }: MusicCardProps) {
         <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-15 transition-opacity duration-300" />
       </Link>
       <div className="flex flex-col ml-3 space-y-0.5 text-white">
-        <p className="font-bold text-sm">{song.title}</p>
+        <p className="font-[550] text-sm">{song.title}</p>
         <h4 className="font-[450] text-[0.6875rem] opacity-80">
           {song.artist}
         </h4>
