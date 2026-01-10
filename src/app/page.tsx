@@ -21,19 +21,19 @@ export default function Home() {
           </p>
           <Link
             href={"/about"}
-            className="flex flex-row items-start gap-1 group"
+            className="flex flex-row items-center gap-1 group"
           >
             <Image
               src="/icons/yellow-folder.png"
               alt="about"
               width={24}
               height={24}
-              className="rounded-sm h-6 w-6"
+              className="rounded-sm h-4.5 w-4.5"
             />
-            <span className="mt-1 text-sm underline underline-offset-2 decoration-[0.5px] decoration-secondary group-hover:opacity-90 group-hover:decoration-secondary/90 transition-all duration-150">
+            <span className="text-sm underline mt-0.5 underline-offset-2 decoration-[0.5px] decoration-secondary group-hover:opacity-90 group-hover:decoration-secondary/90 transition-all duration-150">
               More about me
             </span>
-            <span className="mt-0.5">→</span>
+            <span className="">→</span>
           </Link>
         </div>
 

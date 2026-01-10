@@ -13,18 +13,18 @@ export default function Experience() {
             key={`${experience.company}-${index}`}
             className="flex items-center"
           >
-            <div className="text-xs uppercase text-secondary shrink-0 w-40">
+            <div className="text-xs uppercase text-zinc-500 shrink-0 w-40">
               {experience.date}
             </div>
             <div className="flex items-center gap-2 flex-1">
               <span className="text-secondary">{experience.title} at </span>
-              <div className="group flex items-center gap-2">
+              <div className="group flex items-start gap-2">
                 <Image
                   src={experience.logo}
                   alt={`${experience.company} logo`}
-                  width={20}
-                  height={20}
-                  className="rounded-sm h-5 w-5 cursor-pointer"
+                  width={200}
+                  height={200}
+                  className="rounded-sm h-4.5 w-4.5 cursor-pointer"
                 />
                 <Link
                   href={experience.companyUrl}

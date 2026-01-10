@@ -11,7 +11,7 @@ export default function About() {
     <StaggeredContainer className="space-y-8">
       <Link
         href="/"
-        className="text-sm text-secondary hover:text-foreground transition-colors duration-150"
+        className="text-sm text-muted hover:text-zinc-400 transition-colors duration-150"
       >
         <span className="mr-1">←</span>Back
       </Link>
@@ -32,10 +32,9 @@ export default function About() {
               <Image
                 src="/logos/ucf.jpeg"
                 alt="UCF"
-                width={20}
-                height={20}
-                className="inline rounded-sm h-5 w-5 mx-2 cursor-pointer"
-                style={{ verticalAlign: "middle" }}
+                width={200}
+                height={200}
+                className="inline rounded-sm h-4.5 w-4.5 mx-2 cursor-pointer align-baseline"
               />
               <Link
                 href="https://www.cecs.ucf.edu"

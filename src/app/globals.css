@@ -3,8 +3,8 @@
 :root {
   --background: #0d0d0d;
   --foreground: #ededed;
-  --secondary: #a1a1aa;
-  --muted: #71717a;
+  --secondary: #8f8f8f;
+  --muted: #686868;
   --border: #222222;
   --card: #9f0000;
 }
@@ -23,11 +23,17 @@
 
 @layer components {
   .container-width {
-    @apply max-w-2xl mx-auto px-4 sm:px-6;
+    @apply max-w-2xl mx-auto px-8 sm:px-6;
   }
 
   .section-title {
     @apply text-xs font-mono tracking-wider text-muted font-medium uppercase;
+  }
+}
+
+@layer utilities {
+  .text-15px {
+    font-size: 15px;
   }
 }
 

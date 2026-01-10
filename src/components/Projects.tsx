@@ -9,7 +9,7 @@ export default function Projects() {
       <div className="flex flex-col space-y-4">
         {projects.map((project) => (
           <div key={project.slug} className="flex flex-row group">
-            <div className="text-muted mr-1 cursor-pointer">↳</div>
+            <div className="text-zinc-500 mr-1 cursor-pointer">↳</div>
 
             <span className="text-secondary leading-relaxed">
               <Link
