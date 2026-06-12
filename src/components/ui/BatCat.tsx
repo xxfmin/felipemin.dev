@@ -80,23 +80,42 @@ export default function BatCat({ size = 96 }: BatCatProps) {
     });
   }, []);
 
-  const handleMouseMove = useCallback((event: MouseEvent) => {
-    handleMove(event.clientX, event.clientY);
+  // Throttle pointer tracking to one state update per frame
+  const pendingMoveRef = useRef<{ x: number; y: number } | null>(null);
+  const moveRafRef = useRef<number | null>(null);
+
+  const queueMove = useCallback((clientX: number, clientY: number) => {
+    pendingMoveRef.current = { x: clientX, y: clientY };
+    if (moveRafRef.current === null) {
+      moveRafRef.current = requestAnimationFrame(() => {
+        moveRafRef.current = null;
+        if (pendingMoveRef.current) {
+          handleMove(pendingMoveRef.current.x, pendingMoveRef.current.y);
+        }
+      });
+    }
   }, [handleMove]);
+
+  const handleMouseMove = useCallback((event: MouseEvent) => {
+    queueMove(event.clientX, event.clientY);
+  }, [queueMove]);
 
   const handleTouchMove = useCallback((event: TouchEvent) => {
     if (event.touches.length > 0) {
       const touch = event.touches[0];
-      handleMove(touch.clientX, touch.clientY);
+      queueMove(touch.clientX, touch.clientY);
     }
-  }, [handleMove]);
+  }, [queueMove]);
 
   useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("touchmove", handleTouchMove);
+    window.addEventListener("mousemove", handleMouseMove, { passive: true });
+    window.addEventListener("touchmove", handleTouchMove, { passive: true });
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("touchmove", handleTouchMove);
+      if (moveRafRef.current !== null) {
+        cancelAnimationFrame(moveRafRef.current);
+      }
     };
   }, [handleMouseMove, handleTouchMove]);
 
