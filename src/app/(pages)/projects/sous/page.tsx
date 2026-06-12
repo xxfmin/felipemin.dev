@@ -90,10 +90,11 @@ export default function Sous() {
           <div className="relative flex-1 overflow-hidden rounded space-y-2">
             <div className="relative overflow-hidden rounded-xl">
               <video
-                src="/projects/sous/fridge-agent.mp4#t=0.001"
+                src="/projects/sous/fridge-agent.mp4"
+                poster="/projects/sous/fridge-agent-poster.jpg"
                 controls
                 playsInline
-                preload="metadata"
+                preload="none"
                 className="w-full h-auto block"
               />
             </div>
@@ -112,10 +113,11 @@ export default function Sous() {
           <div className="relative flex-1 overflow-hidden rounded space-y-2">
             <div className="relative overflow-hidden rounded-xl">
               <video
-                src="/projects/sous/recipe-agent.mp4#t=0.001"
+                src="/projects/sous/recipe-agent.mp4"
+                poster="/projects/sous/recipe-agent-poster.jpg"
                 controls
                 playsInline
-                preload="metadata"
+                preload="none"
                 className="w-full h-auto block"
               />
             </div>
@@ -133,10 +135,11 @@ export default function Sous() {
           <div className="relative flex-1 overflow-hidden rounded space-y-2">
             <div className="relative overflow-hidden rounded-xl">
               <video
-                src="/projects/sous/qa-agent.mp4#t=0.001"
+                src="/projects/sous/qa-agent.mp4"
+                poster="/projects/sous/qa-agent-poster.jpg"
                 controls
                 playsInline
-                preload="metadata"
+                preload="none"
                 className="w-full h-auto block"
               />
             </div>
@@ -194,10 +197,11 @@ export default function Sous() {
           <div className="relative flex-1 overflow-hidden rounded space-y-2">
             <div className="relative overflow-hidden rounded-xl">
               <video
-                src="/projects/sous/dashboard.mp4#t=0.001"
+                src="/projects/sous/dashboard.mp4"
+                poster="/projects/sous/dashboard-poster.jpg"
                 controls
                 playsInline
-                preload="metadata"
+                preload="none"
                 className="w-full h-auto block"
               />
             </div>

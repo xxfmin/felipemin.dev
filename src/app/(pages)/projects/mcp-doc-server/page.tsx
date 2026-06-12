@@ -68,10 +68,11 @@ export default function MCPDocServer() {
           <div className="relative flex-1 overflow-hidden rounded space-y-2">
             <div className="relative overflow-hidden rounded-xl">
               <video
-                src="/projects/mcp-doc-server/indexing.mp4#t=0.001"
+                src="/projects/mcp-doc-server/indexing.mp4"
+                poster="/projects/mcp-doc-server/indexing-poster.jpg"
                 controls
                 playsInline
-                preload="metadata"
+                preload="none"
                 className="w-full h-auto block"
               />
             </div>
@@ -105,10 +106,11 @@ export default function MCPDocServer() {
           <div className="relative flex-1 overflow-hidden rounded space-y-2">
             <div className="relative overflow-hidden rounded-xl">
               <video
-                src="/projects/mcp-doc-server/semantic-search.mp4#t=0.001"
+                src="/projects/mcp-doc-server/semantic-search.mp4"
+                poster="/projects/mcp-doc-server/semantic-search-poster.jpg"
                 controls
                 playsInline
-                preload="metadata"
+                preload="none"
                 className="w-full h-auto block"
               />
             </div>

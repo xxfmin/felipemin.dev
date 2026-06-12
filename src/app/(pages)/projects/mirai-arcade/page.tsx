@@ -49,10 +49,11 @@ export default function MiraiArcade() {
           <div className="relative flex-1 overflow-hidden rounded space-y-2">
             <div className="relative overflow-hidden rounded-xl aspect-video">
               <video
-                src="/projects/mirai/demo.mp4#t=0.001"
+                src="/projects/mirai/demo.mp4"
+                poster="/projects/mirai/demo-poster.jpg"
                 controls
                 playsInline
-                preload="metadata"
+                preload="none"
                 className="w-full h-auto block"
               />
             </div>

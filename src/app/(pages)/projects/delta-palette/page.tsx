@@ -235,10 +235,11 @@ export default function DeltaPalette() {
             </p>
             <div className="relative w-full aspect-video">
               <video
-                src="/projects/delta-palette/demo.mp4#t=0.001"
+                src="/projects/delta-palette/demo.mp4"
+                poster="/projects/delta-palette/demo-poster.jpg"
                 controls
                 playsInline
-                preload="metadata"
+                preload="none"
                 className="w-full h-auto block"
               />
             </div>
