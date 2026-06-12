@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { Song, songs } from "@/lib/data";
 import { IoMdPlay, IoMdPause } from "react-icons/io";
 import { PiSpotifyLogoFill } from "react-icons/pi";
@@ -46,7 +45,12 @@ export function MusicCard({ song }: MusicCardProps) {
       className="relative flex flex-row w-full items-center px-2.5 sm:px-2 py-2.5 sm:py-2.5 rounded-xl min-w-0"
       style={{ backgroundColor: bgColor }}
     >
-      <audio ref={audioRef} src={song.audioSrc} onEnded={handleEnded} />
+      <audio
+        ref={audioRef}
+        src={song.audioSrc}
+        onEnded={handleEnded}
+        preload="none"
+      />
       <Link
         href={song.songUrl}
         target="_blank"
@@ -74,11 +78,9 @@ export function MusicCard({ song }: MusicCardProps) {
       >
         <PiSpotifyLogoFill className="w-full h-full" />
       </Link>
-      <motion.button
+      <button
         onClick={togglePlayPause}
-        whileTap={{ scale: 0.92 }}
-        transition={{ type: "spring", duration: 0.02, bounce: 0 }}
-        className="absolute bottom-1.5 sm:bottom-1.5 right-2 sm:right-3 flex items-center justify-center w-9 h-9 sm:w-8 sm:h-8 rounded-full bg-white transition-[background-color,box-shadow] duration-200 cursor-pointer z-10"
+        className="absolute bottom-1.5 sm:bottom-1.5 right-2 sm:right-3 flex items-center justify-center w-9 h-9 sm:w-8 sm:h-8 rounded-full bg-white active:scale-[0.92] transition-[background-color,box-shadow] duration-200 cursor-pointer z-10"
         aria-label={isPlaying ? "Pause" : "Play"}
       >
         {isPlaying ? (
@@ -86,7 +88,7 @@ export function MusicCard({ song }: MusicCardProps) {
         ) : (
           <IoMdPlay className="w-4 h-4 ml-0.5" style={{ fill: bgColor }} />
         )}
-      </motion.button>
+      </button>
     </div>
   );
 }
