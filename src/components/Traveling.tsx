@@ -16,6 +16,7 @@ export function Traveling() {
               alt="Japan"
               width={800}
               height={600}
+              sizes="(max-width: 672px) 50vw, 330px"
               className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-67 transition-opacity duration-300" />
@@ -31,6 +32,7 @@ export function Traveling() {
               alt="Japan"
               width={800}
               height={600}
+              sizes="(max-width: 672px) 50vw, 330px"
               className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-67 transition-opacity duration-300" />
@@ -48,6 +50,7 @@ export function Traveling() {
               alt="Paris"
               width={600}
               height={800}
+              sizes="(max-width: 672px) 33vw, 215px"
               className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-67 transition-opacity duration-300" />
@@ -63,6 +66,7 @@ export function Traveling() {
               alt="England"
               width={600}
               height={800}
+              sizes="(max-width: 672px) 33vw, 215px"
               className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-67 transition-opacity duration-300" />
@@ -79,6 +83,7 @@ export function Traveling() {
               alt="Spain"
               width={600}
               height={800}
+              sizes="(max-width: 672px) 33vw, 215px"
               className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-67 transition-opacity duration-300" />
@@ -96,6 +101,7 @@ export function Traveling() {
               alt="Korea"
               width={800}
               height={600}
+              sizes="(max-width: 672px) 50vw, 330px"
               className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-67 transition-opacity duration-300" />
@@ -111,6 +117,7 @@ export function Traveling() {
               alt="Rome"
               width={800}
               height={600}
+              sizes="(max-width: 672px) 50vw, 330px"
               className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-67 transition-opacity duration-300" />
@@ -128,6 +135,7 @@ export function Traveling() {
               alt="Utah"
               width={600}
               height={800}
+              sizes="(max-width: 672px) 33vw, 215px"
               className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-67 transition-opacity duration-300" />
@@ -144,6 +152,7 @@ export function Traveling() {
               alt="Portugal"
               width={600}
               height={800}
+              sizes="(max-width: 672px) 33vw, 215px"
               className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-67 transition-opacity duration-300" />
@@ -159,6 +168,7 @@ export function Traveling() {
               alt="Mexico"
               width={600}
               height={800}
+              sizes="(max-width: 672px) 33vw, 215px"
               className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-67 transition-opacity duration-300" />
@@ -176,6 +186,7 @@ export function Traveling() {
               alt="Los Angeles"
               width={800}
               height={600}
+              sizes="(max-width: 672px) 50vw, 330px"
               className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-67 transition-opacity duration-300" />
@@ -191,6 +202,7 @@ export function Traveling() {
               alt="Colorado"
               width={800}
               height={600}
+              sizes="(max-width: 672px) 50vw, 330px"
               className="w-full h-auto object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg opacity-0 group-hover:opacity-67 transition-opacity duration-300" />
