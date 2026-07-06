@@ -9,7 +9,7 @@ export const experiences: ExperienceProps[] = [
   {
     company: "JPMorganChase",
     title: "Software Engineer",
-    date: "Incoming",
+    date: "Jul 2026 — Present",
     companyUrl: "https://www.jpmorganchase.com",
   },
   {
